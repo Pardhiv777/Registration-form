@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Information Form</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #f4f9fc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      padding: 20px;
+      margin: 0;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .radio-group {
+      margin-bottom: 15px;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .button-group input {
+      width: 48%;
+      padding: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .button-group input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+
+    .button-group input[type="reset"] {
+      background-color: #f44336;
+      color: white;
+      border: none;
+    }
+
+    .button-group input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .button-group input[type="reset"]:hover {
+      background-color: #e53935;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Personal Information</h1>
+
+  <form action="#" method="POST">
+    <label for="firstname">First Name:</label>
+    <input type="text" name="firstname" id="firstname" required>
+
+    <label for="secondname">Last Name:</label>
+    <input type="text" name="secondname" id="secondname" required>
+
+    <label>Gender:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+    </div>
+
+    <label for="dropdown">Subject of Interest:</label>
+    <select name="dropdown" id="dropdown" required>
+      <option value="mathematics">Mathematics</option>
+      <option value="physics">Physics</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="computers">Computers</option>
+    </select>
+
+    <label for="languages">Languages Known:</label>
+    <input type="text" name="languages" id="languages" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" name="dob" id="dob" required>
+
+    <label for="contact">Contact No.:</label>
+    <input type="number" name="contact" id="contact" required>
+
+    <label for="pincode">Pincode:</label>
+    <input type="number" name="pincode" id="pincode" required>
+
+    <label for="state">State:</label>
+    <input type="text" name="state" id="state" required>
+
+    <label for="country">Country:</label>
+    <input type="text" name="country" id="country" required>
+
+    <div class="button-group">
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+</body>
+</html>
